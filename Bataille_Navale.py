@@ -208,11 +208,11 @@ def tir_valide(tirs:list, ligne:int, colonne:int)->bool:
 def prochain_coup(tirs:list, joueur:str)->tuple:
 	if joueur=='utilisateur':
 		print("Saisissez la position du prochain tir :")
-		ligne=str(input("Lettre :"))
+		ligne=str(input("Lettre : "))
 		ligne=ligne.upper() #Répare l'erreur si l'utilisateur rentre un a au lieu de A
 		while ligne not in LETTRES:
 			print("⚠️ Erreur de lettre, resaisie ta lettre ! ⚠️ ")
-			ligne=str(input("Lettre :"))
+			ligne=str(input("Lettre : "))
 			ligne=ligne.upper()
 		ligne=int(LIGNES[ligne])
 
